@@ -11,7 +11,7 @@ import bento from "@/assets/bento.jpg";
 import cake from "@/assets/cake.jpg";
 import drink from "@/assets/drink.jpg";
 import salad from "@/assets/salad.jpg";
-import logo from "@/assets/esap-logo.png.asset.json";
+import logo from "@/assets/esap-logo.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -111,7 +111,7 @@ function LoginScreen({ onLogin }: { onLogin: () => void }) {
   return (
     <div className="mx-auto flex min-h-screen max-w-md flex-col bg-background px-8 text-foreground">
       <div className="flex flex-1 flex-col items-center justify-center text-center">
-        <img src={logo.url} alt="esap" width={80} height={80} className="h-20 w-20 rounded-2xl shadow-md" />
+        <img src={logo} alt="esap" width={80} height={80} className="h-20 w-20 rounded-2xl shadow-md" />
         <h1 className="mt-6 text-[26px] font-extrabold tracking-tight">esap</h1>
         <p className="mt-1.5 text-[15px] font-bold text-primary">Giải cứu thức ăn - Tiết kiệm chi phí</p>
         <p className="mt-3 text-[13px] leading-relaxed text-muted-foreground">
@@ -165,7 +165,7 @@ function App() {
     <div className="mx-auto flex min-h-screen max-w-md flex-col bg-background text-foreground shadow-2xl relative">
       <header className="sticky top-0 z-30 border-b border-border bg-card/95 backdrop-blur">
         <div className="flex items-center gap-1.5 px-4 py-2.5">
-          <img src={logo.url} alt="esap" width={28} height={28} className="h-7 w-7 rounded-md" />
+          <img src={logo} alt="esap" width={28} height={28} className="h-7 w-7 rounded-md" />
           <span className="truncate text-[15px] font-bold tracking-tight">Eco Flash Sale</span>
           <BadgeCheck className="h-4 w-4 shrink-0 text-primary" />
           <button onClick={() => setRoleOpen(true)} aria-label="Cài đặt & chuyển vai trò"
