@@ -3,21 +3,25 @@ This file is a merged representation of the entire codebase, combined into a sin
 # File Summary
 
 ## Purpose
+
 This file contains a packed representation of the entire repository's contents.
 It is designed to be easily consumable by AI systems for analysis, code review,
 or other automated processes.
 
 ## File Format
+
 The content is organized as follows:
+
 1. This summary section
 2. Repository information
 3. Directory structure
 4. Repository files (if enabled)
 5. Multiple file entries, each consisting of:
-  a. A header with the file path (## File: path/to/file)
-  b. The full contents of the file in a code block
+   a. A header with the file path (## File: path/to/file)
+   b. The full contents of the file in a code block
 
 ## Usage Guidelines
+
 - This file should be treated as read-only. Any changes should be made to the
   original repository files, not this packed version.
 - When processing this file, use the file path to distinguish
@@ -26,6 +30,7 @@ The content is organized as follows:
   the same level of security as you would the original repository.
 
 ## Notes
+
 - Some files may have been excluded based on .gitignore rules and Repomix's configuration
 - Binary files are not included in this packed representation. Please refer to the Repository Structure section for a complete list of file paths, including binary files
 - Files matching patterns in .gitignore are excluded
@@ -33,7 +38,8 @@ The content is organized as follows:
 - Files are sorted by Git change count (files with more changes are at the bottom)
 
 # Directory Structure
-````
+
+```
 .lovable/
   project.json
 public/
@@ -127,21 +133,23 @@ README.md
 tsconfig.json
 vite.config.ts
 vitest.config.ts
-````
+```
 
 # Files
 
 ## File: .lovable/project.json
-````json
+
+```json
 {
   "schemaVersion": 1,
   "template": "tanstack_start_ts_current",
   "revision": "tanstack_start_ts_current-435fd937eb68"
 }
-````
+```
 
 ## File: public/robots.txt
-````
+
+```
 User-agent: Googlebot
 Allow: /
 
@@ -156,10 +164,11 @@ Allow: /
 
 User-agent: *
 Allow: /
-````
+```
 
 ## File: src/assets/esap-logo.png.asset.json
-````json
+
+```json
 {
   "version": 1,
   "asset_id": "63140c56-3c90-4970-af84-3984665ab609",
@@ -171,10 +180,11 @@ Allow: /
   "content_type": "image/png",
   "created_at": "2026-10-13T16:18:08Z"
 }
-````
+```
 
 ## File: src/components/ui/accordion.tsx
-````typescript
+
+```typescript
 import * as React from "react";
 import * as AccordionPrimitive from "@radix-ui/react-accordion";
 import { ChevronDown } from "lucide-react";
@@ -226,10 +236,11 @@ const AccordionContent = React.forwardRef<
 AccordionContent.displayName = AccordionPrimitive.Content.displayName;
 
 export { Accordion, AccordionItem, AccordionTrigger, AccordionContent };
-````
+```
 
 ## File: src/components/ui/alert-dialog.tsx
-````typescript
+
+```typescript
 import * as React from "react";
 import * as AlertDialogPrimitive from "@radix-ui/react-alert-dialog";
 
@@ -345,10 +356,11 @@ export {
   AlertDialogAction,
   AlertDialogCancel,
 };
-````
+```
 
 ## File: src/components/ui/alert.tsx
-````typescript
+
+```typescript
 import * as React from "react";
 import { cva, type VariantProps } from "class-variance-authority";
 
@@ -398,19 +410,21 @@ const AlertDescription = React.forwardRef<
 AlertDescription.displayName = "AlertDescription";
 
 export { Alert, AlertTitle, AlertDescription };
-````
+```
 
 ## File: src/components/ui/aspect-ratio.tsx
-````typescript
+
+```typescript
 import * as AspectRatioPrimitive from "@radix-ui/react-aspect-ratio";
 
 const AspectRatio = AspectRatioPrimitive.Root;
 
 export { AspectRatio };
-````
+```
 
 ## File: src/components/ui/avatar.tsx
-````typescript
+
+```typescript
 "use client";
 
 import * as React from "react";
@@ -458,10 +472,11 @@ const AvatarFallback = React.forwardRef<
 AvatarFallback.displayName = AvatarPrimitive.Fallback.displayName;
 
 export { Avatar, AvatarImage, AvatarFallback };
-````
+```
 
 ## File: src/components/ui/badge.tsx
-````typescript
+
+```typescript
 import * as React from "react";
 import { cva, type VariantProps } from "class-variance-authority";
 
@@ -494,10 +509,11 @@ function Badge({ className, variant, ...props }: BadgeProps) {
 }
 
 export { Badge, badgeVariants };
-````
+```
 
 ## File: src/components/ui/breadcrumb.tsx
-````typescript
+
+```typescript
 import * as React from "react";
 import { Slot } from "@radix-ui/react-slot";
 import { ChevronRight, MoreHorizontal } from "lucide-react";
@@ -599,10 +615,11 @@ export {
   BreadcrumbSeparator,
   BreadcrumbEllipsis,
 };
-````
+```
 
 ## File: src/components/ui/button.tsx
-````typescript
+
+```typescript
 import * as React from "react";
 import { Slot } from "@radix-ui/react-slot";
 import { cva, type VariantProps } from "class-variance-authority";
@@ -652,10 +669,11 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
 Button.displayName = "Button";
 
 export { Button, buttonVariants };
-````
+```
 
 ## File: src/components/ui/calendar.tsx
-````typescript
+
+```typescript
 "use client";
 
 import * as React from "react";
@@ -833,10 +851,11 @@ function CalendarDayButton({
 }
 
 export { Calendar, CalendarDayButton };
-````
+```
 
 ## File: src/components/ui/card.tsx
-````typescript
+
+```typescript
 import * as React from "react";
 
 import { cn } from "@/lib/utils";
@@ -892,10 +911,11 @@ const CardFooter = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDiv
 CardFooter.displayName = "CardFooter";
 
 export { Card, CardHeader, CardFooter, CardTitle, CardDescription, CardContent };
-````
+```
 
 ## File: src/components/ui/carousel.tsx
-````typescript
+
+```typescript
 import * as React from "react";
 import useEmblaCarousel, { type UseEmblaCarouselType } from "embla-carousel-react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
@@ -1136,10 +1156,11 @@ export {
   CarouselPrevious,
   CarouselNext,
 };
-````
+```
 
 ## File: src/components/ui/chart.tsx
-````typescript
+
+```typescript
 import * as React from "react";
 import * as RechartsPrimitive from "recharts";
 
@@ -1471,10 +1492,11 @@ export {
   ChartLegendContent,
   ChartStyle,
 };
-````
+```
 
 ## File: src/components/ui/checkbox.tsx
-````typescript
+
+```typescript
 import * as React from "react";
 import * as CheckboxPrimitive from "@radix-ui/react-checkbox";
 import { Check } from "lucide-react";
@@ -1501,10 +1523,11 @@ const Checkbox = React.forwardRef<
 Checkbox.displayName = CheckboxPrimitive.Root.displayName;
 
 export { Checkbox };
-````
+```
 
 ## File: src/components/ui/collapsible.tsx
-````typescript
+
+```typescript
 "use client";
 
 import * as CollapsiblePrimitive from "@radix-ui/react-collapsible";
@@ -1516,10 +1539,11 @@ const CollapsibleTrigger = CollapsiblePrimitive.CollapsibleTrigger;
 const CollapsibleContent = CollapsiblePrimitive.CollapsibleContent;
 
 export { Collapsible, CollapsibleTrigger, CollapsibleContent };
-````
+```
 
 ## File: src/components/ui/command.tsx
-````typescript
+
+```typescript
 "use client";
 
 import * as React from "react";
@@ -1663,10 +1687,11 @@ export {
   CommandShortcut,
   CommandSeparator,
 };
-````
+```
 
 ## File: src/components/ui/context-menu.tsx
-````typescript
+
+```typescript
 import * as React from "react";
 import * as ContextMenuPrimitive from "@radix-ui/react-context-menu";
 import { Check, ChevronRight, Circle } from "lucide-react";
@@ -1853,10 +1878,11 @@ export {
   ContextMenuSubTrigger,
   ContextMenuRadioGroup,
 };
-````
+```
 
 ## File: src/components/ui/dialog.tsx
-````typescript
+
+```typescript
 "use client";
 
 import * as React from "react";
@@ -1961,10 +1987,11 @@ export {
   DialogTitle,
   DialogDescription,
 };
-````
+```
 
 ## File: src/components/ui/drawer.tsx
-````typescript
+
+```typescript
 import * as React from "react";
 import { Drawer as DrawerPrimitive } from "vaul";
 
@@ -2063,10 +2090,11 @@ export {
   DrawerTitle,
   DrawerDescription,
 };
-````
+```
 
 ## File: src/components/ui/dropdown-menu.tsx
-````typescript
+
+```typescript
 "use client";
 
 import * as React from "react";
@@ -2254,10 +2282,11 @@ export {
   DropdownMenuSubTrigger,
   DropdownMenuRadioGroup,
 };
-````
+```
 
 ## File: src/components/ui/form.tsx
-````typescript
+
+```typescript
 import * as React from "react";
 import * as LabelPrimitive from "@radix-ui/react-label";
 import { Slot } from "@radix-ui/react-slot";
@@ -2429,10 +2458,11 @@ export {
   FormMessage,
   FormField,
 };
-````
+```
 
 ## File: src/components/ui/hover-card.tsx
-````typescript
+
+```typescript
 import * as React from "react";
 import * as HoverCardPrimitive from "@radix-ui/react-hover-card";
 
@@ -2460,10 +2490,11 @@ const HoverCardContent = React.forwardRef<
 HoverCardContent.displayName = HoverCardPrimitive.Content.displayName;
 
 export { HoverCard, HoverCardTrigger, HoverCardContent };
-````
+```
 
 ## File: src/components/ui/input-otp.tsx
-````typescript
+
+```typescript
 import * as React from "react";
 import { OTPInput, OTPInputContext } from "input-otp";
 import { Minus } from "lucide-react";
@@ -2537,10 +2568,11 @@ const InputOTPSeparator = React.forwardRef<
 InputOTPSeparator.displayName = "InputOTPSeparator";
 
 export { InputOTP, InputOTPGroup, InputOTPSlot, InputOTPSeparator };
-````
+```
 
 ## File: src/components/ui/input.tsx
-````typescript
+
+```typescript
 import * as React from "react";
 
 import { cn } from "@/lib/utils";
@@ -2563,10 +2595,11 @@ const Input = React.forwardRef<HTMLInputElement, React.ComponentProps<"input">>(
 Input.displayName = "Input";
 
 export { Input };
-````
+```
 
 ## File: src/components/ui/label.tsx
-````typescript
+
+```typescript
 "use client";
 
 import * as React from "react";
@@ -2588,10 +2621,11 @@ const Label = React.forwardRef<
 Label.displayName = LabelPrimitive.Root.displayName;
 
 export { Label };
-````
+```
 
 ## File: src/components/ui/menubar.tsx
-````typescript
+
+```typescript
 import * as React from "react";
 import * as MenubarPrimitive from "@radix-ui/react-menubar";
 import { Check, ChevronRight, Circle } from "lucide-react";
@@ -2820,10 +2854,11 @@ export {
   MenubarSub,
   MenubarShortcut,
 };
-````
+```
 
 ## File: src/components/ui/navigation-menu.tsx
-````typescript
+
+```typescript
 import * as React from "react";
 import * as NavigationMenuPrimitive from "@radix-ui/react-navigation-menu";
 import { cva } from "class-variance-authority";
@@ -2944,10 +2979,11 @@ export {
   NavigationMenuIndicator,
   NavigationMenuViewport,
 };
-````
+```
 
 ## File: src/components/ui/pagination.tsx
-````typescript
+
+```typescript
 import * as React from "react";
 import { ChevronLeft, ChevronRight, MoreHorizontal } from "lucide-react";
 
@@ -3046,10 +3082,11 @@ export {
   PaginationNext,
   PaginationEllipsis,
 };
-````
+```
 
 ## File: src/components/ui/popover.tsx
-````typescript
+
+```typescript
 import * as React from "react";
 import * as PopoverPrimitive from "@radix-ui/react-popover";
 
@@ -3081,10 +3118,11 @@ const PopoverContent = React.forwardRef<
 PopoverContent.displayName = PopoverPrimitive.Content.displayName;
 
 export { Popover, PopoverTrigger, PopoverContent, PopoverAnchor };
-````
+```
 
 ## File: src/components/ui/progress.tsx
-````typescript
+
+```typescript
 "use client";
 
 import * as React from "react";
@@ -3110,10 +3148,11 @@ const Progress = React.forwardRef<
 Progress.displayName = ProgressPrimitive.Root.displayName;
 
 export { Progress };
-````
+```
 
 ## File: src/components/ui/radio-group.tsx
-````typescript
+
+```typescript
 import * as React from "react";
 import * as RadioGroupPrimitive from "@radix-ui/react-radio-group";
 import { Circle } from "lucide-react";
@@ -3150,10 +3189,11 @@ const RadioGroupItem = React.forwardRef<
 RadioGroupItem.displayName = RadioGroupPrimitive.Item.displayName;
 
 export { RadioGroup, RadioGroupItem };
-````
+```
 
 ## File: src/components/ui/resizable.tsx
-````typescript
+
+```typescript
 import { GripVertical } from "lucide-react";
 import { Group, Panel, Separator } from "react-resizable-panels";
 
@@ -3191,10 +3231,11 @@ const ResizableHandle = ({
 );
 
 export { ResizablePanelGroup, ResizablePanel, ResizableHandle };
-````
+```
 
 ## File: src/components/ui/scroll-area.tsx
-````typescript
+
+```typescript
 import * as React from "react";
 import * as ScrollAreaPrimitive from "@radix-ui/react-scroll-area";
 
@@ -3239,10 +3280,11 @@ const ScrollBar = React.forwardRef<
 ScrollBar.displayName = ScrollAreaPrimitive.ScrollAreaScrollbar.displayName;
 
 export { ScrollArea, ScrollBar };
-````
+```
 
 ## File: src/components/ui/select.tsx
-````typescript
+
+```typescript
 "use client";
 
 import * as React from "react";
@@ -3395,10 +3437,11 @@ export {
   SelectScrollUpButton,
   SelectScrollDownButton,
 };
-````
+```
 
 ## File: src/components/ui/separator.tsx
-````typescript
+
+```typescript
 import * as React from "react";
 import * as SeparatorPrimitive from "@radix-ui/react-separator";
 
@@ -3423,10 +3466,11 @@ const Separator = React.forwardRef<
 Separator.displayName = SeparatorPrimitive.Root.displayName;
 
 export { Separator };
-````
+```
 
 ## File: src/components/ui/sheet.tsx
-````typescript
+
+```typescript
 "use client";
 
 import * as React from "react";
@@ -3549,10 +3593,11 @@ export {
   SheetTitle,
   SheetDescription,
 };
-````
+```
 
 ## File: src/components/ui/sidebar.tsx
-````typescript
+
+```typescript
 import * as React from "react";
 import { Slot } from "@radix-ui/react-slot";
 import { cva, type VariantProps } from "class-variance-authority";
@@ -4297,10 +4342,11 @@ export {
   SidebarTrigger,
   useSidebar,
 };
-````
+```
 
 ## File: src/components/ui/skeleton.tsx
-````typescript
+
+```typescript
 import { cn } from "@/lib/utils";
 
 function Skeleton({ className, ...props }: React.HTMLAttributes<HTMLDivElement>) {
@@ -4308,10 +4354,11 @@ function Skeleton({ className, ...props }: React.HTMLAttributes<HTMLDivElement>)
 }
 
 export { Skeleton };
-````
+```
 
 ## File: src/components/ui/slider.tsx
-````typescript
+
+```typescript
 import * as React from "react";
 import * as SliderPrimitive from "@radix-ui/react-slider";
 
@@ -4335,10 +4382,11 @@ const Slider = React.forwardRef<
 Slider.displayName = SliderPrimitive.Root.displayName;
 
 export { Slider };
-````
+```
 
 ## File: src/components/ui/sonner.tsx
-````typescript
+
+```typescript
 import { Toaster as Sonner } from "sonner";
 
 type ToasterProps = React.ComponentProps<typeof Sonner>;
@@ -4362,10 +4410,11 @@ const Toaster = ({ ...props }: ToasterProps) => {
 };
 
 export { Toaster };
-````
+```
 
 ## File: src/components/ui/switch.tsx
-````typescript
+
+```typescript
 import * as React from "react";
 import * as SwitchPrimitives from "@radix-ui/react-switch";
 
@@ -4393,10 +4442,11 @@ const Switch = React.forwardRef<
 Switch.displayName = SwitchPrimitives.Root.displayName;
 
 export { Switch };
-````
+```
 
 ## File: src/components/ui/table.tsx
-````typescript
+
+```typescript
 import * as React from "react";
 
 import { cn } from "@/lib/utils";
@@ -4491,10 +4541,11 @@ const TableCaption = React.forwardRef<
 TableCaption.displayName = "TableCaption";
 
 export { Table, TableHeader, TableBody, TableFooter, TableHead, TableRow, TableCell, TableCaption };
-````
+```
 
 ## File: src/components/ui/tabs.tsx
-````typescript
+
+```typescript
 import * as React from "react";
 import * as TabsPrimitive from "@radix-ui/react-tabs";
 
@@ -4548,10 +4599,11 @@ const TabsContent = React.forwardRef<
 TabsContent.displayName = TabsPrimitive.Content.displayName;
 
 export { Tabs, TabsList, TabsTrigger, TabsContent };
-````
+```
 
 ## File: src/components/ui/textarea.tsx
-````typescript
+
+```typescript
 import * as React from "react";
 
 import { cn } from "@/lib/utils";
@@ -4573,10 +4625,11 @@ const Textarea = React.forwardRef<HTMLTextAreaElement, React.ComponentProps<"tex
 Textarea.displayName = "Textarea";
 
 export { Textarea };
-````
+```
 
 ## File: src/components/ui/toggle-group.tsx
-````typescript
+
+```typescript
 "use client";
 
 import * as React from "react";
@@ -4634,10 +4687,11 @@ const ToggleGroupItem = React.forwardRef<
 ToggleGroupItem.displayName = ToggleGroupPrimitive.Item.displayName;
 
 export { ToggleGroup, ToggleGroupItem };
-````
+```
 
 ## File: src/components/ui/toggle.tsx
-````typescript
+
+```typescript
 import * as React from "react";
 import * as TogglePrimitive from "@radix-ui/react-toggle";
 import { cva, type VariantProps } from "class-variance-authority";
@@ -4680,10 +4734,11 @@ const Toggle = React.forwardRef<
 Toggle.displayName = TogglePrimitive.Root.displayName;
 
 export { Toggle, toggleVariants };
-````
+```
 
 ## File: src/components/ui/tooltip.tsx
-````typescript
+
+```typescript
 "use client";
 
 import * as React from "react";
@@ -4716,10 +4771,11 @@ const TooltipContent = React.forwardRef<
 TooltipContent.displayName = TooltipPrimitive.Content.displayName;
 
 export { Tooltip, TooltipTrigger, TooltipContent, TooltipProvider };
-````
+```
 
 ## File: src/hooks/use-mobile.tsx
-````typescript
+
+```typescript
 import * as React from "react";
 
 const MOBILE_BREAKPOINT = 768;
@@ -4739,10 +4795,11 @@ export function useIsMobile() {
 
   return !!isMobile;
 }
-````
+```
 
 ## File: src/lib/error-capture.ts
-````typescript
+
+```typescript
 // Captures the original Error out-of-band so server.ts can recover the stack
 // when h3 has already swallowed the throw into a generic 500 Response.
 
@@ -4824,10 +4881,11 @@ export function consumeLastCapturedError(): unknown {
   lastCapturedError = undefined;
   return error;
 }
-````
+```
 
 ## File: src/lib/error-page.ts
-````typescript
+
+```typescript
 export function renderErrorPage(): string {
   return `<!doctype html>
 <html lang="en">
@@ -4858,10 +4916,11 @@ export function renderErrorPage(): string {
   </body>
 </html>`;
 }
-````
+```
 
 ## File: src/lib/lovable-error-reporting.ts
-````typescript
+
+```typescript
 type LovableErrorOptions = {
   mechanism?: "manual" | "onerror" | "unhandledrejection" | "react_error_boundary";
   handled?: boolean;
@@ -4932,20 +4991,22 @@ function describeThrown(error: unknown): string {
     return String(error);
   }
 }
-````
+```
 
 ## File: src/lib/utils.ts
-````typescript
+
+```typescript
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
-````
+```
 
 ## File: src/routes/__root.tsx
-````typescript
+
+```typescript
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import {
   Outlet,
@@ -5070,10 +5131,11 @@ function RootComponent() {
     </QueryClientProvider>
   );
 }
-````
+```
 
 ## File: src/routes/index.tsx
-````typescript
+
+```typescript
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useMemo, useState } from "react";
 import { QRCodeSVG } from "qrcode.react";
@@ -6441,10 +6503,11 @@ function BottomNav({ items, active, onChange }: {
     </nav>
   );
 }
-````
+```
 
 ## File: src/routes/README.md
-````markdown
+
+```markdown
 # Routes
 
 TanStack Start uses **file-based routing**. Every `.tsx` file in this directory
@@ -6454,22 +6517,23 @@ is `src/routes/__root.tsx`.
 
 ## Conventions
 
-| File | URL |
-| --- | --- |
-| `index.tsx` | `/` |
-| `about.tsx` | `/about` |
-| `users/index.tsx` | `/users` |
-| `users/$id.tsx` | `/users/:id` (dynamic — bare `$`, no curly braces) |
-| `posts/{-$category}.tsx` | `/posts/:category?` (optional segment) |
-| `files/$.tsx` | `/files/*` (splat — read via `_splat` param, never `*`) |
-| `_layout.tsx` | layout route (renders children via `<Outlet />`) |
-| `__root.tsx` | app shell — wraps every page; preserve `<Outlet />` |
+| File                     | URL                                                     |
+| ------------------------ | ------------------------------------------------------- |
+| `index.tsx`              | `/`                                                     |
+| `about.tsx`              | `/about`                                                |
+| `users/index.tsx`        | `/users`                                                |
+| `users/$id.tsx`          | `/users/:id` (dynamic — bare `$`, no curly braces)      |
+| `posts/{-$category}.tsx` | `/posts/:category?` (optional segment)                  |
+| `files/$.tsx`            | `/files/*` (splat — read via `_splat` param, never `*`) |
+| `_layout.tsx`            | layout route (renders children via `<Outlet />`)        |
+| `__root.tsx`             | app shell — wraps every page; preserve `<Outlet />`     |
 
 `routeTree.gen.ts` is auto-generated. Don't edit it by hand.
-````
+```
 
 ## File: src/test/app-routing.test.tsx
-````typescript
+
+```typescript
 import { QueryClient } from "@tanstack/react-query";
 import { createRouter, rootRouteId } from "@tanstack/react-router";
 import { describe, expect, it } from "vitest";
@@ -6487,10 +6551,11 @@ describe("App routing", () => {
     expect(matches.at(-1)?.routeId).not.toBe(rootRouteId);
   });
 });
-````
+```
 
 ## File: src/test/setup.ts
-````typescript
+
+```typescript
 import "@testing-library/jest-dom/vitest";
 
 Object.defineProperty(window, "scrollTo", {
@@ -6511,10 +6576,11 @@ Object.defineProperty(window, "matchMedia", {
     dispatchEvent: () => {},
   }),
 });
-````
+```
 
 ## File: src/router.tsx
-````typescript
+
+```typescript
 import { QueryClient } from "@tanstack/react-query";
 import { createRouter } from "@tanstack/react-router";
 import { routeTree } from "./routeTree.gen";
@@ -6531,10 +6597,11 @@ export const getRouter = () => {
 
   return router;
 };
-````
+```
 
 ## File: src/routeTree.gen.ts
-````typescript
+
+```typescript
 /* eslint-disable */
 
 // @ts-nocheck
@@ -6545,69 +6612,70 @@ export const getRouter = () => {
 // You should NOT make any changes in this file as it will be overwritten.
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
-import { Route as rootRouteImport } from './routes/__root'
-import { Route as IndexRouteImport } from './routes/index'
+import { Route as rootRouteImport } from "./routes/__root";
+import { Route as IndexRouteImport } from "./routes/index";
 
 const IndexRoute = IndexRouteImport.update({
-  id: '/',
-  path: '/',
+  id: "/",
+  path: "/",
   getParentRoute: () => rootRouteImport,
-} as any)
+} as any);
 
 export interface FileRoutesByFullPath {
-  '/': typeof IndexRoute
+  "/": typeof IndexRoute;
 }
 export interface FileRoutesByTo {
-  '/': typeof IndexRoute
+  "/": typeof IndexRoute;
 }
 export interface FileRoutesById {
-  __root__: typeof rootRouteImport
-  '/': typeof IndexRoute
+  __root__: typeof rootRouteImport;
+  "/": typeof IndexRoute;
 }
 export interface FileRouteTypes {
-  fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
-  fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
-  fileRoutesById: FileRoutesById
+  fileRoutesByFullPath: FileRoutesByFullPath;
+  fullPaths: "/";
+  fileRoutesByTo: FileRoutesByTo;
+  to: "/";
+  id: "__root__" | "/";
+  fileRoutesById: FileRoutesById;
 }
 export interface RootRouteChildren {
-  IndexRoute: typeof IndexRoute
+  IndexRoute: typeof IndexRoute;
 }
 
-declare module '@tanstack/react-router' {
+declare module "@tanstack/react-router" {
   interface FileRoutesByPath {
-    '/': {
-      id: '/'
-      path: '/'
-      fullPath: '/'
-      preLoaderRoute: typeof IndexRouteImport
-      parentRoute: typeof rootRouteImport
-    }
+    "/": {
+      id: "/";
+      path: "/";
+      fullPath: "/";
+      preLoaderRoute: typeof IndexRouteImport;
+      parentRoute: typeof rootRouteImport;
+    };
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
-}
+};
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
-  ._addFileTypes<FileRouteTypes>()
+  ._addFileTypes<FileRouteTypes>();
 
-import type { getRouter } from './router.tsx'
-import type { startInstance } from './start.ts'
-declare module '@tanstack/react-start' {
+import type { getRouter } from "./router.tsx";
+import type { startInstance } from "./start.ts";
+declare module "@tanstack/react-start" {
   interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+    ssr: true;
+    router: Awaited<ReturnType<typeof getRouter>>;
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>;
   }
 }
-````
+```
 
 ## File: src/server.ts
-````typescript
+
+```typescript
 import "./lib/error-capture";
 
 import { consumeLastCapturedError } from "./lib/error-capture";
@@ -6669,10 +6737,11 @@ export default {
     }
   },
 };
-````
+```
 
 ## File: src/start.ts
-````typescript
+
+```typescript
 import { createStart, createCsrfMiddleware, createMiddleware } from "@tanstack/react-start";
 
 import { renderErrorPage } from "./lib/error-page";
@@ -6702,10 +6771,11 @@ const csrfMiddleware = createCsrfMiddleware({
 export const startInstance = createStart(() => ({
   requestMiddleware: [errorMiddleware, csrfMiddleware],
 }));
-````
+```
 
 ## File: src/styles.css
-````css
+
+```css
 @import "tailwindcss" source(none);
 @source "../src";
 @import "tw-animate-css";
@@ -6870,36 +6940,92 @@ export const startInstance = createStart(() => ({
   --font-sans: "Be Vietnam Pro", ui-sans-serif, system-ui, sans-serif;
 }
 @layer base {
-  html, body { scrollbar-width: none; }
-  html::-webkit-scrollbar, body::-webkit-scrollbar { display: none; }
-  body { font-family: var(--font-sans); -webkit-font-smoothing: antialiased; }
+  html,
+  body {
+    scrollbar-width: none;
+  }
+  html::-webkit-scrollbar,
+  body::-webkit-scrollbar {
+    display: none;
+  }
+  body {
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
 }
 @utility no-scrollbar {
   scrollbar-width: none;
-  &::-webkit-scrollbar { display: none; }
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 @utility micro {
-  font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 600;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 600;
   color: var(--color-muted-foreground);
 }
-@keyframes scan-line { 0% { top: 4%; } 50% { top: 92%; } 100% { top: 4%; } }
-@utility animate-scan { animation: scan-line 1.2s ease-in-out infinite; }
-@keyframes rise-in { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
-@utility animate-rise { animation: rise-in 0.35s ease-out backwards; }
+@keyframes scan-line {
+  0% {
+    top: 4%;
+  }
+  50% {
+    top: 92%;
+  }
+  100% {
+    top: 4%;
+  }
+}
+@utility animate-scan {
+  animation: scan-line 1.2s ease-in-out infinite;
+}
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@utility animate-rise {
+  animation: rise-in 0.35s ease-out backwards;
+}
 @utility press {
-  transition: transform 0.12s ease, box-shadow 0.12s ease;
-  &:active { transform: scale(0.96); }
+  transition:
+    transform 0.12s ease,
+    box-shadow 0.12s ease;
+  &:active {
+    transform: scale(0.96);
+  }
 }
 @utility press-sm {
   transition: transform 0.1s ease;
-  &:active { transform: scale(0.9); }
+  &:active {
+    transform: scale(0.9);
+  }
 }
-@keyframes pop-in { 0% { transform: scale(0.6); } 60% { transform: scale(1.15); } 100% { transform: scale(1); } }
-@utility animate-pop { animation: pop-in 0.25s ease-out; }
-````
+@keyframes pop-in {
+  0% {
+    transform: scale(0.6);
+  }
+  60% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@utility animate-pop {
+  animation: pop-in 0.25s ease-out;
+}
+```
 
 ## File: .gitignore
-````
+
+```
 # Logs
 logs
 *.log
@@ -6932,10 +7058,11 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-````
+```
 
 ## File: .prettierignore
-````
+
+```
 node_modules
 dist
 .output
@@ -6944,21 +7071,24 @@ pnpm-lock.yaml
 package-lock.json
 bun.lock
 routeTree.gen.ts
-````
+```
 
 ## File: .prettierrc
-````
+
+```
 {
   "printWidth": 100,
   "semi": true,
   "singleQuote": false,
   "trailingComma": "all"
 }
-````
+```
 
 ## File: AGENTS.md
-````markdown
+
+```markdown
 <!-- LOVABLE:BEGIN -->
+
 > [!IMPORTANT]
 > This project is connected to [Lovable](https://lovable.dev). Avoid rewriting
 > published git history — force pushing, or rebasing/amending/squashing commits
@@ -6967,11 +7097,13 @@ routeTree.gen.ts
 >
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
+
 <!-- LOVABLE:END -->
-````
+```
 
 ## File: bunfig.toml
-````toml
+
+```toml
 [install]
 saveTextLockfile = true
 # 24h supply-chain guard: skip package versions published less than a day ago.
@@ -6979,10 +7111,11 @@ minimumReleaseAge = 86400
 # Each entry bypasses the 24h guard for one package — confirm with the user
 # before adding any.
 minimumReleaseAgeExcludes = ["@lovable.dev/vite-tanstack-config", "@lovable.dev/mcp-js", "@lovable.dev/email-js", "@lovable.dev/webhooks-js"]
-````
+```
 
 ## File: components.json
-````json
+
+```json
 {
   "$schema": "https://ui.shadcn.com/schema.json",
   "style": "new-york",
@@ -7005,10 +7138,11 @@ minimumReleaseAgeExcludes = ["@lovable.dev/vite-tanstack-config", "@lovable.dev/
   },
   "registries": {}
 }
-````
+```
 
 ## File: eslint.config.js
-````javascript
+
+```javascript
 import js from "@eslint/js";
 import eslintPluginPrettier from "eslint-plugin-prettier/recommended";
 import globals from "globals";
@@ -7049,10 +7183,128 @@ export default tseslint.config(
   },
   eslintPluginPrettier,
 );
+```
+
+## File: README.md
+
+````markdown
+# Welcome to your Lovable project
+
+This project was built with [Lovable](https://lovable.dev).
+
+## Build with Lovable
+
+Open your project in the [Lovable editor](https://lovable.dev) and keep building.
+
+- **Ship faster**: describe what you want to build and Lovable handles the code.
+- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
+- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
+
+## Development
+
+Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+
+```sh
+git clone <this-repository-url>
+cd <repository-name>
+npm i
+npm run dev
+```
+
+## Built with
+
+- TanStack Start
+- TypeScript
+- React
+- Tailwind CSS
+  "# Eco-Flash-Sale-final-"
 ````
 
+## File: tsconfig.json
+
+```json
+{
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "vite.config.ts",
+    "vitest.config.ts",
+    "eslint.config.js"
+  ],
+  "compilerOptions": {
+    "target": "ES2022",
+    "jsx": "react-jsx",
+    "module": "ESNext",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "types": ["vite/client", "vitest/globals"],
+
+    "moduleResolution": "Bundler",
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": false,
+    "noEmit": true,
+
+    "skipLibCheck": true,
+    "strict": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "noUncheckedSideEffectImports": true,
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  }
+}
+```
+
+## File: vite.config.ts
+
+```typescript
+// @lovable.dev/vite-tanstack-config already includes the following — do NOT add them manually
+// or the app will break with duplicate plugins:
+//   - TanStack devtools (dev-only, first), tanstackStart, viteReact, tailwindcss, tsConfigPaths,
+//     nitro (build-only using cloudflare as a default target), VITE_* env injection, @ path alias,
+//     React/TanStack dedupe, error logger plugins, and sandbox detection (port/host/strictPort).
+// You can pass additional config via defineConfig({ vite: { ... }, etc... }) if needed.
+import { defineConfig } from "@lovable.dev/vite-tanstack-config";
+
+export default defineConfig({
+  tanstackStart: {
+    // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
+    // nitro/vite builds from this
+    server: { entry: "server" },
+  },
+});
+```
+
+## File: vitest.config.ts
+
+```typescript
+import { defineConfig } from "vitest/config";
+import react from "@vitejs/plugin-react";
+import path from "node:path";
+
+export default defineConfig({
+  plugins: [react()],
+  test: {
+    environment: "jsdom",
+    globals: true,
+    setupFiles: ["./src/test/setup.ts"],
+    include: ["src/**/*.{test,spec}.{ts,tsx}"],
+  },
+  resolve: {
+    alias: { "@": path.resolve(__dirname, "./src") },
+  },
+});
+```
+
 ## File: package.json
-````json
+
+```json
 {
   "name": "tanstack_start_ts",
   "private": true,
@@ -7142,125 +7394,13 @@ export default tseslint.config(
     "eslint-plugin-react-refresh": "^0.4.20",
     "globals": "^15.15.0",
     "jsdom": "^20.0.3",
-    "nitro": "3.0.260603-beta",
+    "nitro": "^3.0.0",
+    "postcss": "^8.5.3",
     "prettier": "^3.7.3",
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.56.1",
-    "vite": "8.1.5",
+    "vite": "^6.0.0",
     "vitest": "^4.1.10"
   }
 }
-````
-
-## File: README.md
-````markdown
-# Welcome to your Lovable project
-
-This project was built with [Lovable](https://lovable.dev).
-
-## Build with Lovable
-
-Open your project in the [Lovable editor](https://lovable.dev) and keep building.
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
-- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
-
-## Development
-
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
-
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
 ```
-
-## Built with
-
-- TanStack Start
-- TypeScript
-- React
-- Tailwind CSS
-"# Eco-Flash-Sale-final-"
-````
-
-## File: tsconfig.json
-````json
-{
-  "include": [
-    "src/**/*.ts",
-    "src/**/*.tsx",
-    "vite.config.ts",
-    "vitest.config.ts",
-    "eslint.config.js"
-  ],
-  "compilerOptions": {
-    "target": "ES2022",
-    "jsx": "react-jsx",
-    "module": "ESNext",
-    "lib": ["ES2022", "DOM", "DOM.Iterable"],
-    "types": ["vite/client", "vitest/globals"],
-
-    "moduleResolution": "Bundler",
-    "allowImportingTsExtensions": true,
-    "verbatimModuleSyntax": false,
-    "noEmit": true,
-
-    "skipLibCheck": true,
-    "strict": true,
-    "noUnusedLocals": false,
-    "noUnusedParameters": false,
-    "noFallthroughCasesInSwitch": true,
-    "noImplicitOverride": true,
-    "noImplicitReturns": true,
-    "noPropertyAccessFromIndexSignature": true,
-    "noUncheckedIndexedAccess": true,
-    "exactOptionalPropertyTypes": true,
-    "noUncheckedSideEffectImports": true,
-    "paths": {
-      "@/*": ["./src/*"]
-    }
-  }
-}
-````
-
-## File: vite.config.ts
-````typescript
-// @lovable.dev/vite-tanstack-config already includes the following — do NOT add them manually
-// or the app will break with duplicate plugins:
-//   - TanStack devtools (dev-only, first), tanstackStart, viteReact, tailwindcss, tsConfigPaths,
-//     nitro (build-only using cloudflare as a default target), VITE_* env injection, @ path alias,
-//     React/TanStack dedupe, error logger plugins, and sandbox detection (port/host/strictPort).
-// You can pass additional config via defineConfig({ vite: { ... }, etc... }) if needed.
-import { defineConfig } from "@lovable.dev/vite-tanstack-config";
-
-export default defineConfig({
-  tanstackStart: {
-    // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
-    // nitro/vite builds from this
-    server: { entry: "server" },
-  },
-});
-````
-
-## File: vitest.config.ts
-````typescript
-import { defineConfig } from "vitest/config";
-import react from "@vitejs/plugin-react";
-import path from "node:path";
-
-export default defineConfig({
-  plugins: [react()],
-  test: {
-    environment: "jsdom",
-    globals: true,
-    setupFiles: ["./src/test/setup.ts"],
-    include: ["src/**/*.{test,spec}.{ts,tsx}"],
-  },
-  resolve: {
-    alias: { "@": path.resolve(__dirname, "./src") },
-  },
-});
-````
