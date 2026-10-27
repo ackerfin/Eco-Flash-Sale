@@ -291,13 +291,8 @@ function LoginScreen({ onLogin }: { onLogin: () => void }) {
   return (
     <div className="mx-auto flex min-h-screen max-w-md flex-col bg-background px-8 text-foreground">
       <div className="flex flex-1 flex-col items-center justify-center text-center">
-        <img
-          src={logo}
-          alt="esap"
-          width={80}
-          height={80}
-          className="h-20 w-auto object-contain"
-        />
+        <img src={logo} alt="esap" className="h-20 w-auto object-contain" />
+
         <h1 className="mt-6 text-[26px] font-extrabold tracking-tight">esap</h1>
         <p className="mt-1.5 text-[15px] font-bold text-primary">
           Giải cứu thức ăn - Tiết kiệm chi phí
