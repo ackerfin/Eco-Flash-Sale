@@ -12,4 +12,7 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
+  // On Netlify builds, output a Netlify Function instead of a Cloudflare worker.
+  // Lovable's own builds ignore this and keep using cloudflare-module.
+  ...(process.env.NETLIFY ? { nitro: { preset: "netlify" } } : {}),
 });
